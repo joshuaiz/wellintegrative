@@ -81,6 +81,13 @@ tweeners.
 
 } // end of media query
 
+@media only screen and (max-width: 767px) {
+
+	// styles in 768up.scss
+	@import "breakpoints/767down";
+
+} // end of media query
+
 /*********************
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and

@@ -199,6 +199,13 @@ jQuery(document).ready(function($) {
 
     $('.gform_button').addClass('purple-btn');
 
+    // $('#responsive-menu-title .RMImage').css({
+    //   height: '32px !important',
+    //   width: '32px !important'
+    //   });
+
+    $('#menu-item-152 > a').prepend('<span class="dashicons dashicons-phone"></span>');
+
 
 }); /* end of as page load scripts */
 

@@ -58,7 +58,7 @@
 					<?php // bloginfo('description'); ?>
 
 
-					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+					<nav class="cf" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
     					         'container_class' => 'menu cf',                 // class of container (should you choose to use it)
@@ -73,7 +73,10 @@
     					         'fallback_cb' => ''                             // fallback function (if there is one)
 						)); ?>
 
+
 					</nav>
+
+					
 
 				</div>
 

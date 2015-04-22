@@ -20,7 +20,7 @@ body {
 	font-size: 100%;
 	line-height: 1.5;
 	color: $text-color;
-	background-color: $gray;
+	// background-color: $gray;
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
 }
@@ -47,13 +47,14 @@ style a page via class
 	.callout-wrap {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 	.callout {
 		img {
 			margin-bottom: 12px;
 		}
 		p {
-			font-size: .82em;
+			// font-size: .82em;
 		}
 	}
 	.list-square li {
@@ -75,12 +76,37 @@ style a page via class
 		.owl-carousel li {
 			// display: none;
 		}
+		.owl-nav {
+			.owl-prev, .owl-next {
+				font-size: 2em;
+  				position: relative;
+  				top: -10px;
+  				color: #ccc;
+  				&:hover, &:focus {
+  					color: #aaa;
+  				}
+			}
+			.owl-prev {
+				float: left;
+			}
+			.owl-next {
+				float: right;
+			}
+		}
 	}
 	.what-outer {
 		border-top: 1px dotted #ccc;
 		padding-bottom: 2.2em;
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.who-outer {
+		border-top: 1px dotted #ccc;
+		// padding-bottom: 2.2em;
+		ul li {
+			line-height: normal;
+		}
 	}
 }                          /* home page */
 .blog {}                          /* blog template page */
@@ -172,15 +198,17 @@ a, a:visited {
 	color: $link-color;
 	outline: none;
 	text-decoration: none;
+	outline: none;
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
 		text-decoration: underline;
+		outline: none;
 	}
 
 	/* on click */
 	&:active {
-
+		outline: none;
 	}
 
 	/* mobile tap color */
@@ -191,6 +219,7 @@ a, a:visited {
 		for mobile devices.
 		*/
 		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+		outline: none;
 	}
 }
 
@@ -247,6 +276,7 @@ HEADER STYLES
 
 .header {
 	background-color: $white;
+	height: 100px;
 }
 
 	#logo {
@@ -1031,12 +1061,15 @@ FOOTER STYLES
 	} /* end .footer-links */
 
 
-	.copyright {}
+	.copyright {
+		a { color: #fff; }
+	}
 
 .footer-outer {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 2.2em;
+	flex-wrap: wrap;
 }
 
 
@@ -1294,4 +1327,20 @@ FOOTER STYLES
   /* reduce the damage in FF3.0 */
   display:block !important;
   width:0;
+}
+
+.soliloquy-container .soliloquy-prev {
+	background: rgba(0,0,0,0) url(images/left.png) no-repeat scroll 50% 50% !important;
+	opacity: 0.3 !important;
+	&:hover, &:focus {
+		opacity: 0.7 !important;
+	}
+}
+
+.soliloquy-container .soliloquy-next {
+	background: rgba(0,0,0,0) url(images/right.png) no-repeat scroll 50% 50% !important;
+	opacity: 0.3 !important;
+	&:hover, &:focus {
+		opacity: 0.7 !important;
+	}
 }

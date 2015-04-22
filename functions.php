@@ -362,4 +362,10 @@ remove_filter('acf_the_content', 'wptexturize');
 //   }
 //   add_filter('acf_the_content', 'filter_ptags_on_images');
 
+
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+function load_dashicons_front_end() {
+wp_enqueue_style( 'dashicons' );
+}
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

@@ -155,7 +155,7 @@ function bones_scripts_and_styles() {
 		using the google cdn. That way it stays cached
 		and your site will load faster.
 		*/
-		wp_enqueue_script( 'jquery' );
+		// wp_enqueue_script( 'jquery' );
 		wp_enqueue_script( 'bones-js' );
 
 	}
@@ -191,19 +191,19 @@ function bones_theme_support() {
 	// to add header image support go here: http://themble.com/support/adding-header-background-image-support/
 
 	// adding post format support
-	add_theme_support( 'post-formats',
-		array(
-			'aside',             // title less blurb
-			'gallery',           // gallery of images
-			'link',              // quick link to other site
-			'image',             // an image
-			'quote',             // a quick quote
-			'status',            // a Facebook like status update
-			'video',             // video
-			'audio',             // audio
-			'chat'               // chat transcript
-		)
-	);
+	// add_theme_support( 'post-formats',
+	// 	array(
+	// 		'aside',             // title less blurb
+	// 		'gallery',           // gallery of images
+	// 		'link',              // quick link to other site
+	// 		'image',             // an image
+	// 		'quote',             // a quick quote
+	// 		'status',            // a Facebook like status update
+	// 		'video',             // video
+	// 		'audio',             // audio
+	// 		'chat'               // chat transcript
+	// 	)
+	// );
 
 	// wp menus
 	add_theme_support( 'menus' );

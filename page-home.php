@@ -105,6 +105,10 @@
 
 									</div>
 
+									<div class="who-outer">
+										<?php the_field('who_chooses_well'); ?>
+									</div>
+
 								</section>
 
 
@@ -148,14 +152,14 @@
 jQuery(document).ready(function($){
 	$('.owl-carousel').owlCarousel({
     items:1,
-    // nav: true,
+    nav: true,
     loop:true,
     autoplay:true,
-    autoplayTimeout: 7000,
+    autoplayTimeout: 14000,
     // animateOut: 'fadeOut',
 });
-	// $('.owl-prev').html('&lsaquo;');
-	// $('.owl-next').html('&rsaquo;');
+	$('.owl-prev').html('&lsaquo;');
+	$('.owl-next').html('&rsaquo;');
 });
 
 

@@ -34,7 +34,7 @@
 						<?php the_field('social_links', 'option'); ?>
 					</div>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>. &nbsp;&nbsp;<a href="/contact/">Contact Us</a> | <a href="/faq/">FAQ</a> | <a href="/terms/">Terms & Conditions</a></p>
 
 				</div>
 
