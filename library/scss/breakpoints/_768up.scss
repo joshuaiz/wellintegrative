@@ -63,6 +63,10 @@ HEADER STYLES
   	}
 }
 
+#menu-item-160 {
+	margin-right: 8px;
+}
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -80,8 +84,9 @@ NAVIGATION STYLES
 		a {
 			border-bottom: 0;
 			line-height: 100px;
-			padding: 0 10px;
+			padding: 0 8px;
 			font-weight: 500;
+			font-size: 14px;
 
 			/*
 			you can use hover styles here even though this size
@@ -235,7 +240,8 @@ SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
-	margin-top: 2.2em;
+	// margin-top: 2.2em;
+	margin-top: 164px;
 }
 
 	.widgettitle {

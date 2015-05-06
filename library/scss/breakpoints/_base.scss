@@ -29,7 +29,11 @@ body {
 	list-style: square inside none;
 }
 
-
+.store-link {
+	padding: 1.5em 0;
+  	margin: 2.2em 0;
+  	border-bottom: 1px dotted #ccc;
+}
 
 /********************
 WORDPRESS BODY CLASSES
@@ -1018,12 +1022,17 @@ FOOTER STYLES
 	h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 		color: #fff;
 	}
-	.location a {
+	.location {
+		a {
 		color: #fff;
 		text-decoration: none;
 		&:hover, &:focus {
 			color: #fff;
 		text-decoration: none;
+		}
+		}
+		.blue-btn {
+			font-size: 16px;
 		}
 	}
 	.social {
@@ -1031,7 +1040,7 @@ FOOTER STYLES
 		a {
 		float: left;
 		margin-right: 10px;
-		width: 24px;
+		width: 64px;
 		img {
 			&:hover, &:focus {
 				opacity: 0.8;
@@ -1343,4 +1352,54 @@ FOOTER STYLES
 	&:hover, &:focus {
 		opacity: 0.7 !important;
 	}
+}
+
+#popmake-191, #popmake-overlay {
+	display: none;
+}
+
+#popmake-191 {
+	height: 80% !important;
+  width: 70% !important;
+  overflow: auto !important;
+  margin: auto !important;
+  // position: absolute !important;
+  position: fixed;
+  top: 40px!important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+
+#gform_fields_2 {
+	input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], select, textarea, .field {
+		height: 40px;
+	}
+	&:active, &:focus {
+		  background-color: #eaedf2 !important;
+	}
+}
+
+#gform_2 input, #gform_2 textarea {
+	&:active, &:focus {
+		  background-color: #eaedf2 !important;
+	}
+}
+
+.Absolute-Center { 
+  height: 50%; /* Set your own height: percents, ems, whatever! */
+  width: 50%; /* Set your own width: percents, ems, whatever! */
+  overflow: auto; /* Recommended in case content is larger than the container */
+  margin: auto; /* Center the item vertically & horizontally */
+  position: absolute; /* Break it out of the regular flow */
+  top: 0; left: 0; bottom: 0; right: 0; /* Set the bounds in which to center it, relative to its parent/container */
+}
+
+#responsive-menu {
+	height: auto !important;
+}
+
+.popmake-close {
+	font-size: 21px !important;
+	font-weight: 600 !important;
 }

@@ -283,6 +283,9 @@ HEADER STYLES
   top: 5px;
   margin-right: 4px; }
 
+#menu-item-160 {
+  margin-right: 8px; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
@@ -303,8 +306,9 @@ NAVIGATION STYLES
     .nav li a {
       border-bottom: 0;
       line-height: 100px;
-      padding: 0 10px;
+      padding: 0 8px;
       font-weight: 500;
+      font-size: 14px;
       /*
       you can use hover styles here even though this size
       has the possibility of being a mobile device.
@@ -405,7 +409,7 @@ style a page via class
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
-  margin-top: 2.2em; }
+  margin-top: 164px; }
 
 .widgettitle {
   border-bottom: 2px solid #444;

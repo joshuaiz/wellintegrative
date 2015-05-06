@@ -48,6 +48,8 @@
 
 									<ul class="testimonials-list owl-carousel">
 
+
+
 					<?php // WP_Query arguments
 					$args = array (
 						'post_type'              => 'gcic_testimonials',
@@ -114,11 +116,11 @@
 
 								<footer class="article-footer">
 
-                  <?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+                 
 
 								</footer>
 
-								<?php comments_template(); ?>
+								
 
 							</article>
 
